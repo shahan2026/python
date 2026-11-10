@@ -1,0 +1,124 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "8ce76a07",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter integers separated by spaces: -5 10 20 -3 55\n",
+      "Positive numbers: [10, 20, 55]\n"
+     ]
+    }
+   ],
+   "source": [
+    "#positive list of numbers from a given list of integors\n",
+    "numbers = list(map(int, input(\"Enter integers separated by spaces: \").split()))\n",
+    "\n",
+    "positive = [x for x in numbers if x > 0]\n",
+    "\n",
+    "print(\"Positive numbers:\", positive)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "755b264f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter numbers separated by spaces: 2 3 4 5\n",
+      "Squares: [4, 9, 16, 25]\n"
+     ]
+    }
+   ],
+   "source": [
+    "#square of n numbers\n",
+    "numbers = list(map(int, input(\"Enter numbers separated by spaces: \").split()))\n",
+    "squares = [x**2 for x in numbers]\n",
+    "\n",
+    "print(\"Squares:\", squares)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "3480686d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter a word: education\n",
+      "Vowels: ['e', 'u', 'a', 'i', 'o']\n"
+     ]
+    }
+   ],
+   "source": [
+    "#list of vowels from given word\n",
+    "word = input(\"Enter a word: \")\n",
+    "vowels = [ch for ch in word if ch.lower() in 'aeiou']\n",
+    "print(\"Vowels:\", vowels)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "3bf878ea",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter a word: cat\n",
+      "Ordinal values: [99, 97, 116]\n"
+     ]
+    }
+   ],
+   "source": [
+    "#ordinal value of each element of a word\n",
+    "word = input(\"Enter a word: \")\n",
+    "values = [ord(ch) for ch in word]\n",
+    "print(\"Ordinal values:\", values)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "8c31c9fd",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.11.5"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
